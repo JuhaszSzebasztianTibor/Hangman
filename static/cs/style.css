@@ -74,14 +74,14 @@ button:hover {
   position: absolute;
   top: 1px;
   right: 20px;
-  padding: 12px 28px; /* Adjusted padding to match other buttons */
+  padding: 12px 28px;
   font-size: 16px;
   background-color: white;
   color: #f44336;
   border: 2px solid #f44336;
   border-radius: 25px;
   cursor: pointer;
-  margin: 10px 0; /* Add spacing if needed */
+  margin: 10px 0;
 }
 
 #restart-btn:hover {
