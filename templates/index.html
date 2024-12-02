@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/cs/style.css" />
+    <script src="static/js/script.js"></script>
+    <title>Hangman Game</title>
+  </head>
+  <body>
+    <h1>Hangman Game</h1>
+    <canvas
+      id="hangman-canvas"
+      width="300"
+      height="300"
+      style="border: 2px solid #000"
+    ></canvas>
+    <div class="hidden-word" id="hidden-word">_ _ _ _</div>
+    <div>Attempts Left: <span id="attempts-left">6</span></div>
+    <input
+      class="guess-input"
+      type="text"
+      id="guess"
+      maxlength="1"
+      placeholder="Enter a letter"
+    />
+    <button onclick="makeGuess()">Submit</button>
+    <div class="letters" id="letters"></div>
+    <div id="message"></div>
+    <div
+      class="error-message"
+      id="error-message"
+      style="padding-bottom: 15px"
+    ></div>
+    <button id="restart-btn" onclick="startGame()">Restart Game</button>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  position: relative; /* For positioning the restart button */
+}
+
+.hidden-word {
+  font-size: 24px;
+  margin: 20px;
+}
+
+.guess-input {
+  margin: 10px;
+  width: 30%; /* Increase width of the input */
+  font-size: 18px; /* Increase font size */
+  padding: 8px;
+  border-radius: 15px; /* Add padding for bigger input */
+}
+
+button {
+  padding: 12px 28px; /* Increase button size */
+  font-size: 16px; /* Increase font size */
+  cursor: pointer;
+  border: 2px solid #4caf50; /* Border color */
+  background-color: white; /* Button color */
+  color: #4caf50;
+  border-radius: 25px; /* Rounded corners */
+  margin: 10px 0; /* Space between buttons */
+}
+
+button:hover {
+  background-color: #45a049; /* Button hover effect */
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.letters {
+  display: flex; /* Use flexbox to align letters in a row */
+  justify-content: center; /* Center the letters horizontally */
+  gap: 10px; /* Add space between the letters */
+  margin: 20px;
+  flex-wrap: wrap; /* Allows the letters to wrap if the container is too narrow */
+}
+
+.letter {
+  font-size: 24px; /* Increase font size for better visibility */
+  padding: 8px 16px;
+  border: 2px solid #000; /* Default border color */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center; /* Ensure text is centered in the box */
+}
+
+.letter.correct {
+  background-color: #d0efd1; /* Light green */
+  color: #2e7d32; /* Dark green */
+  border-color: #2e7d32;
+}
+
+.letter.incorrect {
+  background-color: #ffcdd2; /* Light red */
+  color: #c62828; /* Dark red */
+  border-color: #c62828;
+}
+
+.error-message {
+  color: rgb(232, 3, 3);
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+#restart-btn {
+  position: absolute;
+  top: 1px;
+  right: 20px;
+  padding: 12px 28px; /* Adjusted padding to match other buttons */
+  font-size: 16px;
+  background-color: white;
+  color: #f44336;
+  border: 2px solid #f44336;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 10px 0; /* Add spacing if needed */
+}
+
+#restart-btn:hover {
+  background-color: #f44336; /* Red background color on hover */
+  color: white; /* White text color on hover */
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19); /* Hover shadow effect */
+}
